@@ -94,6 +94,15 @@
                     ≡
                 </ToggleButton>
             </StackPanel>
+
+            <!--Settings Button-->
+            <Button Margin="0,0,10,0"
+                Width="50"
+                Height="30"
+                WindowChrome.IsHitTestVisibleInChrome="True"
+                Command="{Binding OpenSettingsCommand}">
+                <TextBlock FontFamily="{DynamicResource FontIcoFont}" Text="&#xef39;" />
+            </Button>
  
         </StackPanel>
 

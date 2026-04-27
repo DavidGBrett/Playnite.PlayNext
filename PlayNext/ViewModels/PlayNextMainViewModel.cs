@@ -62,6 +62,8 @@ namespace PlayNext.ViewModels
 
         public ICommand NavigateBackCommand => new RelayCommand(() => { API.Instance.MainView.SwitchToLibraryView(); });
 
+        public ICommand OpenSettingsCommand => new RelayCommand(() => { _plugin.OpenSettingsView(); });	
+
         public void LoadData(ICollection<GameToPlayViewModel> games, PlayNextSettings settings)
 		{
 			new Task(() =>
